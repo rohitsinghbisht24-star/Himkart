@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick SMS Sender</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 1rem;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #25D366; /* WhatsApp/SMS Green */
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h3>Message to: 7983427187</h3>
+        <textarea id="msgContent" placeholder="Type your message here..."></textarea>
+        <button onclick="sendSMS()">Send Message</button>
+    </div>
+
+    <script>
+        function sendSMS() {
+            const phoneNumber = "7983427187";
+            const message = document.getElementById('msgContent').value;
+            
+            // Encode the message for URL compatibility
+            const encodedMsg = encodeURIComponent(message);
+            
+            // Standard SMS link format
+            // Use '?' for Android/General and '&' for iOS compatibility
+            const smsUrl = `sms:${phoneNumber}?body=${encodedMsg}`;
+            
+            // Trigger the messaging app
+            window.location.href = smsUrl;
+        }
+    </script>
+
+</body>
+</html>
