@@ -1,0 +1,21 @@
+# Step 1: Give Googlebot full access
+User-agent: Googlebot
+Allow: /
+
+# Step 2: Give Googlebot Image crawler full access
+User-agent: Googlebot-Image
+Allow: /
+
+# Step 3: Block specific aggressive AI/Scraper bots
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Step 4: Block ALL other bots not mentioned above
+User-agent: *
+Disallow: /
