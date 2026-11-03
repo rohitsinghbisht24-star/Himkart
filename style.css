@@ -47,7 +47,7 @@ header { width: 100%; height: 3.5rem; border-bottom: 1px solid #ccc; display: fl
 .nav-links { display: flex; align-items: center; gap: 5px; }
 .nav-links h2 {
   /* --- Your Existing Styles --- */
-  background-color:#ef07bd;
+  background-color:#C5A059;
   font-size: clamp(0.8rem, 1.5vw, 1.5rem);
   margin: 0;
   cursor: pointer;
@@ -108,7 +108,7 @@ header { width: 100%; height: 3.5rem; border-bottom: 1px solid #ccc; display: fl
 
 #product-slider { position: fixed; top: 3.5rem; padding-bottom: 10rem; left: 0; width: 100%; height: calc(100svh - 4rem); background-color: rgb(252, 241, 252); z-index: 1000; transform: translateX(-100%); transition: 0.4s ease-in-out; box-shadow: 5px 0 25px rgba(0,0,0,0.2); overflow-y: auto; border: 2px solid black;}
 #product-slider.active { transform: translateX(0); height: 100svh;}
-.slider-header { position: sticky; top: 0; background: rgb(197, 94, 197); padding: 15px 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ddd; z-index: 10; }
+.slider-header { position: sticky; top: 0; background: #3e93cb; padding: 15px 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ddd; z-index: 10; }
 #slider-title{margin: 0; color: white;}
 .back-btn { border: 1px solid white; background: none; color: white; padding: 8px 15px; border-radius: 5px; cursor: pointer; }
 #pslidandp{
@@ -141,7 +141,7 @@ header { width: 100%; height: 3.5rem; border-bottom: 1px solid #ccc; display: fl
     border-radius: 0px 30px 0px 0px;                   /* Spacing between subcat items */
 
     /* Aesthetics */
-    background: plum;
+    background: #88b1cc;
     border-right: 1px solid #eee;
     padding: 15px 5px;
     
@@ -304,7 +304,7 @@ h6 { font-size: 1.3rem; margin: 0px; padding: 0px; text-align: center;}
 
 .about { height: auto; width: 100%; border-radius: 25px; scroll-margin-top: 80px; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .abox { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); place-items: center; }
-.atext { justify-self: center; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: clamp(1rem, 5vw, 5rem); width: 90%; background-color: rgb(236, 174, 236); border-radius: 50px;}
+.atext { justify-self: center; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: clamp(1rem, 5vw, 5rem); width: 90%; background-color: #ebddc3; border-radius: 50px;}
 .atext h1 { padding-bottom: 0px; margin-bottom: 0px; }
 .atext p { font-size: 1.2rem; 
     line-height: 1.2;        /* 1.2 is too tight; 1.5 gives the breathability you mentioned */
@@ -315,7 +315,7 @@ h6 { font-size: 1.3rem; margin: 0px; padding: 0px; text-align: center;}
     
     /* Optional: Improves how the browser handles word spacing */
     word-break: break-word;}
-.contact-btn { background-color: rgb(206, 72, 206); height: 3rem; width: clamp(8rem, 10vw, 10rem); border-radius: 25px; color: white; font-size: clamp(1rem, 2vw, 2rem); animation: move 1s linear infinite; cursor: pointer; border: none;}
+.contact-btn { background-color: #ef9e08; height: 3rem; width: clamp(8rem, 10vw, 10rem); border-radius: 25px; color: white; font-size: clamp(1rem, 2vw, 2rem); animation: move 1s linear infinite; cursor: pointer; border: none;}
 .contact-btn:hover { background-color: purple;}
 
 @keyframes move { 0%{ transform: translateY(-5px); } 50%{ transform: translateY(0px); } 100%{ transform: translateY(-5px); } }
@@ -323,10 +323,10 @@ h6 { font-size: 1.3rem; margin: 0px; padding: 0px; text-align: center;}
 .aimg { display: flex; justify-content: center; align-items: center; width: 100%; height: clamp(20rem, 60vw, 60rem);}
 .aimg img { height: 100%; width: 90%; padding: 20px 0px; object-fit: contain;}
 
-.cbox { width: 100%; overflow: hidden; border: 1px solid purple; border-radius: 25px; padding: 40px 20px;}
+.cbox { width: 100%; overflow: hidden; border: 1px solid #C5A059; border-radius: 25px; padding: 40px 20px;}
 .cwrap { flex-wrap:nowrap; width: 100%; display: flex; justify-content: space-evenly; align-items: center; flex-direction: row; gap: 20px;}
 .cimg { height: clamp(5rem, 20vw, 18rem); width: clamp(5rem, 22vw, 20rem); border: 1px solid purple; border-radius: 10px; box-shadow: 0 6px 15px rgba(17, 1, 9, 0.5); object-fit: contain;}
-.ctext { text-align: center; border: 1px solid purple; padding: 0px 0px; width: 90%; font-size: clamp(0.7rem, 1.5vw, 1.5rem); display: flex; justify-content: center; align-items: center; flex-direction: column; box-shadow: 0 6px 15px rgba(17, 1, 9, 0.5); border-radius: 25px; background-color: white; height: clamp(10rem, 20vw, 20rem); line-height: clamp(0.1rem, 0.1vw, 0.1rem); width: clamp(10rem, 20vw, 20rem);}
+.ctext { text-align: center; border: 1px solid #C5A059; padding: 0px 0px; width: 90%; font-size: clamp(0.7rem, 1.5vw, 1.5rem); display: flex; justify-content: center; align-items: center; flex-direction: column; box-shadow: 0 6px 15px rgba(17, 1, 9, 0.5); border-radius: 25px; background-color: white; height: clamp(10rem, 20vw, 20rem); line-height: clamp(0.1rem, 0.1vw, 0.1rem); width: clamp(10rem, 20vw, 20rem);}
 .ctext h3{margin: 0px; padding: 0px; line-height: clamp(1.2rem, 2.5vw, 2.5rem);}
 .acc img { height: 25px; width: 25px; border-radius: 5px; animation: ro 5s ease infinite;}
 .acc { width: 100%; display: flex; justify-content: space-evenly; align-items: center; margin-top: 10px;}
@@ -475,7 +475,7 @@ h6 { font-size: 1.3rem; margin: 0px; padding: 0px; text-align: center;}
 
         .counter {
             font-size: clamp(2rem, 3vw, 3rem);
-            color: #fc03d2;
+            color: #C5A059;
             font-weight: bold;
         }
         

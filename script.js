@@ -1449,7 +1449,7 @@ if (sliderTitle) {
     }
 
     function updateCount() {
-        const randomPeople = Math.floor(Math.random() * 15) + 8;
+        const randomPeople = Math.floor(Math.random() * 10) + 4;
         if (countElement) countElement.textContent = randomPeople;
     }
 
@@ -1974,7 +1974,7 @@ whatsappBtn.addEventListener('click', () => {
     const locationLink = userCoords ? `https://www.google.com/maps?q=${userCoords.lat},${userCoords.lon}` : `(Location not tagged)`;
     const divider = "--------------------------\n"; 
     
-    let msg = `*🛍️ NEW ORDER - WINK IT*\n`;
+    let msg = `*🛍️ NEW ORDER - HimKart*\n`;
     msg += divider;
     msg += `📅 Date: ${dateStr} | ${timeStr}\n`;
     msg += `👤 Name: ${name}\n📍 Address: ${address}\n🗺️ Location: ${locationLink}\n\n`;
