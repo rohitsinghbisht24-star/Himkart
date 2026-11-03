@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussoorie Diaries | Queen of the Hills</title>
+    <link rel="stylesheet" href="mbistyle.css">
+    <!-- Google Fonts: Caveat & Montserrat for custom branding -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Mussoorie by Ira<span>.</span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero">Home</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#places">Places</a>
+                <a href="#cafes">Cafes</a>
+                <a href="#experiences">Experiences</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Extravagant Hero Automated Banner Slider -->
+    <section id="hero" class="hero-slider-section">
+        <div class="hero-slide active" style="background-image: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1600&q=80');">
+            <div class="hero-content">
+                <span class="badge">Queen of the Hills</span>
+                <h1>Discover the Magic of <em>Mussoorie</em></h1>
+                <p>Immerse yourself in colonial heritage, misty pine forests, and timeless Himalayan views.</p>
+                <div class="hero-btns">
+                    <a href="#places" class="btn-primary">Explore Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80');">
+            <div class="hero-content">
+                <span class="badge">Colonial Heritage</span>
+                <h1>Stroll Down Historic <em>Mall Road</em></h1>
+                <p>Experience glowing Victorian lampposts, local handicrafts, and iconic mountain eateries.</p>
+                <div class="hero-btns">
+                    <a href="#experiences" class="btn-primary">View Experiences</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80');">
+            <div class="hero-content">
+                <span class="badge">Artisanal Retreats</span>
+                <h1>Cozy Up in <em>Landour Cafes</em></h1>
+                <p>Sip hot cinnamon brews and organic coffee wrapped in high-altitude pine backdrops.</p>
+                <div class="hero-btns">
+                    <a href="#cafes" class="btn-primary">Discover Cafes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Pagination Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+
+        <div class="floating-badge card-1">🌲 Landour Vibe</div>
+        <div class="floating-badge card-2">☕ Artisanal Brews</div>
+    </section>
+
+    <!-- Large Pop-Style Tri-Marquee Highlights Section -->
+    <div id="highlights" class="marquee-container-wrapper">
+        <!-- Marquee 1: Left to Right, Vibrant Yellow -->
+        <div class="marquee-section marquee-pop-1">
+            <div class="marquee-track marquee-ltr">
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+                <div class="marquee-item">Food</div>
+            </div>
+        </div>
+
+        <!-- Marquee 2: Right to Left, Electric Pink -->
+        <div class="marquee-section marquee-pop-2">
+            <div class="marquee-track marquee-rtl">
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+                <div class="marquee-item">Walk</div>
+            </div>
+        </div>
+
+        <!-- Marquee 3: Left to Right, Neon Lime/Green -->
+        <div class="marquee-section marquee-pop-3">
+            <div class="marquee-track marquee-ltr">
+                <div class="marquee-item">Enjoy</div>
+                <div class="marquee-item">Enjoy</div>
+                <div class="marquee-item">Enjoy</div>
+                <div class="marquee-item">Enjoy</div>
+                <div class="marquee-item">Enjoy</div>
+                <div class="marquee-item">Enjoy</div>
+                <div class="marquee-item">Enjoy</div>
+                <div class="marquee-item">Enjoy</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Places to Visit Section -->
+    <section id="places" class="container section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Iconic Places</h2>
+                <p>Breathtaking viewpoints and historical landmarks</p>
+            </div>
+            <div class="grid">
+                <a href="lal-tibba.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lal Tibba Scenic Point</h3>
+                        <p>The highest point in Mussoorie offering panoramic views of the snow-capped Himalayan range through old-school telescopes.</p>
+                        <div class="card-category-tag tag-place">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Iconic Place</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="company-garden.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1594897030264-ab7d87efc473?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Company Garden</h3>
+                        <p>A vibrant colorful botanical garden featuring an artificial lake, amusement rides, and countless exotic plant species.</p>
+                        <div class="card-category-tag tag-place">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Iconic Place</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="kempty-falls.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1594897030264-ab7d87efc473?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Kempty Falls</h3>
+                        <p>Mussoorie’s most famous cascading waterfall surrounded by high cliffs, perfect for a refreshing mountain dip.</p>
+                        <div class="card-category-tag tag-place">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Iconic Place</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cafes Section -->
+    <section id="cafes" class="bg-alt section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Mountain Cafes</h2>
+                <p>Cozy hideouts with incredible aromas and views</p>
+            </div>
+            <div class="grid">
+                <a href="landour-bakehouse.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Landour Bakehouse</h3>
+                        <p>Step back into the 19th century with vintage Victorian decor, freshly baked cinnamon rolls, and hot artisanal coffee.</p>
+                        <div class="card-category-tag tag-cafe">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Mountain Cafe</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="little-llama.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Little Llama Cafe</h3>
+                        <p>A youth favorite near Kulri offering incredible wood-fired pizzas, burgers, and sweeping terrace views of the Doon valley.</p>
+                        <div class="card-category-tag tag-cafe">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Mountain Cafe</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="cafe-ivy.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1594897030264-ab7d87efc473?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Café Ivy (Landour)</h3>
+                        <p>Nestled near Char Dukan, complete with wooden interiors, a cozy fireplace, and pristine forest backdrops.</p>
+                        <div class="card-category-tag tag-cafe">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Mountain Cafe</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="container section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Tour around</h2>
+                <p>Live the true Pahari way of life</p>
+            </div>
+            <div class="grid">
+                <a href="mall-road.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Evening Stroll on Mall Road</h3>
+                        <p>Experience the bustling colonial heart of Mussoorie with local street food, handicrafts, and glowing Victorian lampposts.</p>
+                        <div class="card-category-tag tag-experience">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Experience</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="landour-trek.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1594897030264-ab7d87efc473?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Landour Ridge Trek</h3>
+                        <p>Walk beneath towering deodar and oak trees in quiet, vehicle-free lanes where time genuinely slows down.</p>
+                        <div class="card-category-tag tag-experience">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Experience</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="sunset-point.html" class="card reveal card-link" data-card-slider>
+                    <div class="card-img-wrapper multi-slider">
+                        <div class="slide-img active" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="card-slider-dots">
+                            <span class="card-dot active"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Himalayan Sunset Watching</h3>
+                        <p>Witness brilliant orange and purple hues burst across the horizon from secluded viewpoints across Sister's Bazaar.</p>
+                        <div class="card-category-tag tag-experience">
+                            <span class="tag-star">★</span>
+                            <span class="tag-text">Experience</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mussoorie Tourism Guide. Crafted with care for the mountains.</p>
+        </div>
+    </footer>
+
+    <script src="mbiscript.js"></script>
+</body>
+</html>

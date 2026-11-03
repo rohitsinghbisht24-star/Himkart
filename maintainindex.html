@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wink It Mussoorie | Premium Food & Essentials Delivery</title>
+
+    <meta name="description" content="Wink It Mussoorie provides fast delivery for food, snacks, and daily essentials in 30-60 minutes across Mussoorie, Landour, and Woodstock. Open 8:00 AM to 11:30 PM. Order via WhatsApp!">
+    <meta name="keywords" content="Wink It Mussoorie, food delivery Mussoorie, food delivery char dukan, fast delivery Mussoorie, Wink It Landour, food delivery landour, landour delivery, mussoorie delivery, mall road delivery, dalai hill delivery, library delivery, food delivery service in Mussoorie, Chacha Ka Dhabba, Landour Bakehouse, Rokeby, Savoy, Omi's Sweets, Mussoorie Weather, Weather Mussoorie, Mussoorie Distance, Mussoorie Temperature, Temperature Mussoorie, Dehradun To Mussoorie, Airbnb in Mussoorie, Mussoorie Crowd, Kempty Falls, Bhatta Falls, Taxi Mussoorie number, Best Taxi Service in Mussoorie, Scooty rental mussoorie, Scooty Rental Number Mussoorie, Mussoorie Taxi Number, Best delivery service in Mussoorie, Delivery near Mussoorie, Delivery near Barlowganj, Delivery near Savoy, Delivery near JW Marriott, Delivery Near Woodstock, Woodstock Student 26-27, Ridge Wood, Alter Ridge, Abergeldie, Misty Haven Mussoorie">
+    <meta name="author" content="Wink It Mussoorie">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wink It Mussoorie | Delivery Service">
+    <meta property="og:description" content="Fastest delivery for food and essentials in Mussoorie & Landour. Open 8:00 AM - 11:30 PM. Order easily on WhatsApp!">
+    <meta property="og:image" content="newlogo.jpg">
+    <meta property="og:url" content="https://www.winkitmussoorie.com">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wink It Mussoorie | Delivery Service">
+    <meta name="twitter:description" content="Fastest delivery for food and essentials in Mussoorie & Landour. Open 8:00 AM - 11:30 PM. Order easily on WhatsApp!">
+    <meta name="twitter:image" content="newlogo.jpg">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a0a0c">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Wink It">
+    <link rel="apple-touch-icon" href="newlogo.jpg">
+
+    <link rel="icon" type="image/x-icon" href="newlogo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            height: 100vh;
+            height: 100dvh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: #08080a;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(255, 204, 0, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 0, 85, 0.04) 0%, transparent 40%);
+            color: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 16px 20px;
+        }
+
+        header {
+            width: 100%;
+            padding-top: 4px;
+        }
+
+        .logo-container {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: translateY(-2px);
+        }
+
+        .logo-img {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffcc00;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.25);
+            margin-bottom: 6px;
+        }
+
+        .logo-text {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            background: linear-gradient(180deg, #ffffff 0%, #d1d5db 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 204, 0, 0.1);
+            border: 1px solid rgba(255, 204, 0, 0.2);
+            color: #ffcc00;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #ffcc00;
+            animation: pulse 1.8s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { opacity: 0.4; }
+        }
+
+        .maintenance-heading h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .maintenance-heading p {
+            font-size: 0.88rem;
+            color: #9ca3af;
+            max-width: 440px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        .interactive-split {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 36px;
+            width: 100%;
+            max-width: 800px;
+            flex: 1;
+            max-height: calc(100vh - 190px);
+        }
+
+        .left-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .turntable {
+            position: relative;
+            padding: 16px;
+            background: rgba(22, 22, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border-radius: 24px;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .record-player {
+            position: relative;
+            width: min(22vh, 160px);
+            height: min(22vh, 160px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tonearm {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            width: 50px;
+            height: 90px;
+            z-index: 10;
+            transform-origin: 40px 10px;
+            transform: rotate(18deg);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+
+        .tonearm-base {
+            width: 18px;
+            height: 18px;
+            background: #4b5563;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: 2px solid #6b7280;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+        }
+
+        .tonearm-stick {
+            width: 4px;
+            height: 65px;
+            background: linear-gradient(to right, #9ca3af, #e5e7eb, #9ca3af);
+            position: absolute;
+            right: 7px;
+            top: 10px;
+            border-radius: 2px;
+        }
+
+        .tonearm-cartridge {
+            width: 9px;
+            height: 15px;
+            background: #ffcc00;
+            position: absolute;
+            right: 5px;
+            bottom: 12px;
+            border-radius: 2px;
+            box-shadow: 0 0 6px rgba(255, 204, 0, 0.4);
+        }
+
+        .tape-record {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle, 
+                #111 0%, #111 15%, 
+                #222 16%, #1a1a1a 18%, 
+                #111 28%, #252525 30%, 
+                #181818 42%, #222 44%, 
+                #111 58%, #252525 60%, 
+                #000 70%);
+            box-shadow: 0 0 25px rgba(255, 204, 0, 0.15), 0 10px 25px rgba(0,0,0,0.8);
+            border: 3px solid #282828;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: spin 3s linear infinite;
+            cursor: pointer;
+            transition: filter 0.3s;
+        }
+
+        .tape-record:hover {
+            filter: brightness(1.15);
+        }
+
+        .tape-record::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.12) 100%);
+            pointer-events: none;
+        }
+
+        .record-center {
+            width: 32%;
+            height: 32%;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            border: 3px solid #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 8px rgba(0,0,0,0.6);
+        }
+
+        .record-hole {
+            width: 20%;
+            height: 20%;
+            background-color: #08080a;
+            border-radius: 50%;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .music-caption {
+            margin-top: 12px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #6b7280;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .right-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+            max-width: 330px;
+        }
+
+        .action-card {
+            background: rgba(22, 22, 26, 0.6);
+            backdrop-filter: blur(12px);
+            padding: 16px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .action-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .action-card h3 {
+            color: #ffffff;
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .action-card p {
+            color: #9ca3af;
+            font-size: 0.75rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .yt-btn, .tel-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 100%;
+        }
+
+        .yt-btn {
+            background: linear-gradient(135deg, #FF0000 0%, #cc0000 100%);
+            box-shadow: 0 4px 14px rgba(255, 0, 0, 0.25);
+        }
+
+        .yt-btn:hover {
+            box-shadow: 0 6px 18px rgba(255, 0, 0, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .tel-btn {
+            background: linear-gradient(135deg, #25D366 0%, #1da851 100%);
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+        }
+
+        .tel-btn:hover {
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .btn-icon {
+            width: 16px;
+            height: 16px;
+            fill: #ffffff;
+        }
+
+        footer {
+            padding-bottom: 6px;
+            font-size: 0.75rem;
+            color: #4b5563;
+            font-weight: 500;
+        }
+
+        @media (max-width: 650px) {
+            .interactive-split {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .right-side {
+                width: 100%;
+            }
+
+            .record-player {
+                width: min(16vh, 110px);
+                height: min(16vh, 110px);
+            }
+
+            .action-card {
+                padding: 12px 14px;
+            }
+
+            .action-card p {
+                display: none;
+            }
+
+            .maintenance-heading h1 {
+                font-size: 1.3rem;
+            }
+            
+            .music-caption {
+                margin-top: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://www.instagram.com/wink_it_mussoorie" class="logo-container">
+            <img src="newlogo.jpg" alt="Wink It Logo" class="logo-img" onerror="this.style.display='none'">
+            <h2 class="logo-text">Wink It<br>Mussoorie</h2>
+        </a>
+    </header>
+
+    <div class="maintenance-heading">
+        <div class="status-badge">
+            <span class="status-dot"></span> System Maintenance
+        </div>
+        <h1>We'll Be Right Back</h1>
+        <p>We are performing a quick scheduled upgrade to deliver a seamless experience.</p>
+    </div>
+
+    <div class="interactive-split">
+        
+        <div class="left-side">
+            <div class="turntable">
+                <div class="tonearm">
+                    <div class="tonearm-base"></div>
+                    <div class="tonearm-stick"></div>
+                    <div class="tonearm-cartridge"></div>
+                </div>
+                <div class="record-player">
+                    <div class="tape-record" title="Spinning Tune">
+                        <div class="record-center">
+                            <div class="record-hole"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="music-caption">🎵 Relax with our playlist</span>
+        </div>
+
+        <div class="right-side">
+            <div class="action-card">
+                <h3>Enjoy Music While You Wait</h3>
+                <p>Listen to our curated playlist on YouTube while we complete our upgrades.</p>
+                <a href="https://youtube.com/playlist?list=PLppyRdTnIqaTQ3bDyUe-fxwmWYum9IJ4w&si=QNxp_0v4Tqu95DbO" target="_blank" rel="noopener noreferrer" class="yt-btn">
+                    <svg class="btn-icon" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    Our Playlist on Youtube
+                </a>
+            </div>
+
+            <div class="action-card">
+                <h3>Need Urgent Assistance?</h3>
+                <p>Have questions or urgent orders? Call our support team directly.</p>
+                <a href="tel:7983427187" class="tel-btn">
+                    <svg class="btn-icon" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    Request assistance
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by Ankur</p>
+    </footer>
+
+</body>
+</html>
