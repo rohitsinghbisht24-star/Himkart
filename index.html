@@ -1,0 +1,254 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wink It Mussoorie | Mussoorie Delivery Service</title>
+    
+    <meta name="description" content="Wink It Mussoorie provides premium delivery for food and essentials in 30-60 minutes. Serving the community from 8:00 AM to 11:30 PM. Order via WhatsApp!">
+
+    <meta name="keywords" content="Wink It Mussoorie, food delivery Mussoorie, food delivery char dukan, fast delivery Mussoorie, Delivery, Wink It Landour, food delivery landour, landour delivery, mussoorie delivery, mall road delivery, dalai hill delivery, library delivery, food delivery service in Mussoorie, Chacha Ka Dhabba, Landour Bakehouse, Rokby, Savoy, Omi's Mussoorie, Omi's Sweet Shop, Mussoorie Weather, Weather Mussoorie, Mussoorie Distance, Mussoorie Temprature, Temprature Mussoorie, Dehradun To Mussoorie, Airbnb in Mussoorie, Mussoorie Crowd, Kempty Falls, Bhatta Falls, Taxi Mussoorie number, Best Taxi Service in Mussoorie, Taxi Service, Taxi Number Mussoorie, Scoory rental mussoorie, Scooty Rental Number Mussoorie, Mussoorie Taxi Number, Best delivery service in Mussoorie, Delivery near Mussoorie, Delivery new Barloganj, Delivery near Savoy, Delivery near JW Marriot, Delivery Near Woodstock, Mussoorie Guide Book pdf, Misty Haven Mussoorie">
+
+    <meta property="og:title" content="Wink It Mussoorie">
+    <meta property="og:description" content="Fastest delivery for food and essentials in Mussoorie. Open 8:00 AM - 11:30 PM.">
+    <meta property="og:image" content="newlogo.jpg">
+    <meta property="og:url" content="https://www.winkitmussoorie.com">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="newlogo.jpg">
+
+    <link rel="icon" type="image/x-icon" href="newlogo.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    
+    <div id="splash-screen">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="intro.mp4" type="video/mp4">
+            .
+        </video>
+    </div>
+    <div id="cart-popup" class="cart-popup hidden">
+        <div id="popup-images-container" class="popup-images"></div>
+        <p><span id="popup-count">0</span> Item in cart</p>
+    </div>
+
+    <header>
+        <a href="https://www.instagram.com/wink_it_mussoorie" id="logo-link"><h2 class="logo">HimKart</h2></a>
+        
+        <div class="search-container">
+            <input type="text" id="product-search" placeholder="Search product...">
+            <span id="clear-search" class="clear-btn hidden">✕</span>
+            <button class="search-btn" id="search-btn">🔍</button>
+            <div id="search-suggestions"></div>
+        </div>
+
+        <div class="nav-links">
+            <a id="collectiona" href="https://api.whatsapp.com/send?phone=917983427187&text=Hi,%20I'd%20like%20to%20request%20a%20service."><h2>Request</h2></a>
+            <div class="order-trigger" id="cart-trigger">
+                Cart: <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+    <div class="top-bar">
+        <div class="online-status">
+            <div class="dot-container">
+                <div class="dot"></div>
+                <div class="pulse"></div>
+            </div>
+            <span class="status-text">
+                <span id="online-count">1</span> online now
+            </span>
+        </div>
+
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </div>
+    <div class="ourservice"><h1 class="main-title">Our Services</h1></div>
+    
+    <div class="scmain">
+    <div class="slider-container">
+        <a href="https://api.whatsapp.com/send?phone=917983427187&text=Hi,%20I'd%20like%20to%20request%20a%20service."> 
+            <div class="slider-wrapper" id="slider">
+                <img src="himkart.jpg" alt="Slide 1">
+                <img src="service2.jpg" alt="Slide 3">
+                <img src="service4.jpg" alt="Slide 4">
+                <img src="service5.jpg" alt="Slide 5">
+            </div>
+        </a>
+        <button class="btn left" id="prevBtn" onclick="moveSlide(-1)"></button>
+        <button class="btn right" id="nextBtn" onclick="moveSlide(1)"></button>
+    </div>
+
+    <div class="dota-container" id="dots">
+        <span class="dota active"></span>
+        <span class="dota"></span>
+        <span class="dota"></span>
+        <span class="dota"></span>
+        <span class="dota"></span>
+        <span class="dota"></span>
+        <span class="dota"></span>
+        <span class="dota"></span>
+    </div>
+</div>
+
+
+<div id="pwa-install-container" style="display: none; text-align: center; padding: 10px;">
+    <button id="pwa-install-btn" style="background-color: #000; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">
+        📲 Install HimKart
+    </button>
+</div>
+
+
+
+    
+    
+
+    <main id="collection-view">
+        <div class="collection-grid" id="collection-grid"></div>
+    </main>
+
+    <div id="product-slider">
+        <div class="slider-header">
+            <h2 id="slider-title">Collection</h2>
+            <button class="back-btn" id="close-slider">✕</button>
+        </div>
+        <div id="pslidandp">
+            <div id="pgroupslider">ajlfh</div>
+            <div id="product-grid">
+            </div>
+        </div>
+    </div>
+
+    <div id="orderSidebar">
+    <button class="close-btn" id="close-sidebar">×</button>
+    <h2>Checkout</h2>
+    <div id="sidebar-content"></div>
+    <div id="sidebar-footer">
+        <hr>
+        <p>Items Total: Rs <span id="subtotal-val">0</span></p>
+        <p id="tax-row" style="display: none;">Store GST (5%): Rs <span id="tax-val">0</span></p>
+        
+        <p id="bag-row" style="display: none;">Paper Bag: Rs <span id="bag-val">0</span></p>
+        
+        <p>Delivery Charges: Rs <span id="delivery-val">0</span></p>
+        <h3>Total Amount: Rs <span id="total-price">0</span></h3>
+        
+        <div class="address-section">
+            <input type="text" id="cust-name" placeholder="Your Name">
+            <label class="woodstock-checkbox" style="display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 8px; white-space: nowrap; padding-bottom: 8px; margin-top: 20px; border-bottom: 1px solid #ccc;">
+                HNBGU
+                <input type="checkbox" id="woodstock-student" style="margin-left: auto;">
+            </label>
+
+            <label class="itm-checkbox" style="display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 8px; white-space: nowrap; padding-bottom: 8px; border-bottom: 1px solid #ccc;">
+                Nursing Hospital
+                <input type="checkbox" id="itm-student" style="padding: 0;">
+            </label>
+            <button id="location-btn" class="loc-btn">📍 Share Current Location</button>
+            
+            <textarea id="cust-address" rows="3" placeholder="Use 'Share Current Location'" readonly></textarea>
+            <span id="location-display"></span>
+        </div>
+        <button class="checkout-btn" id="checkout-whatsapp">
+            <span class="lock-icon">🔒</span> Order via WhatsApp &#10140;
+        </button>
+    </div>
+</div>
+    <div class="stats-container">
+        <div class="stat-group">
+            <span class="counter" data-target="250">0+</span>
+            <span class="label">Orders</span>
+        </div>
+        <div class="stat-group">
+            <span class="counter" data-target="500">0+</span>
+            <span class="label">Products</span>
+        </div>
+        <div class="stat-group">
+            <span class="counter" data-target="2">0+</span>
+            <span class="label">Delivery<br>Partners</span>
+        </div>
+    </div>
+
+    
+    <div id="abt" class="about">
+        <h1 class="heading">About Us</h1>
+        <div class="abox">
+            <div class="atext">
+                <h1>HimKart</h1>
+                <p>Looking for Blinkit in Shri Nagar or Chaura? While big-city apps stop at the foothills, <b>HimKart </b>is here to serve You, Founded in 2026, we are Shri Nagar and Chauras's dedicated delivery service for food, late-night snacks, and daily essentials.
+                    Whether you’re a hotel guest craving munchies or a resident needing urgent supplies, our team delivers within <b>30 to 60 minutes</b>. We operate from 9:00 AM to 11:00 PM, ensuring you never have to go without. Plus, with our personalized service, if your choice is out of stock, we’ll call you personally to suggest the best alternatives.</p>
+                <a href="tel:7983427187"><button class="contact-btn">Contact</button></a>
+            </div>
+            <div class="aimg">
+                <img src="newlogo.jpg" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="ourss"><h1 class="main-title">Community Services</h1></div>
+    <div><h1 class="mainp">At the heart of our work is a commitment to our local community and a shared responsibility to protect our environment, fully supporting the goals of SDG 15.<br>---09/07/2025---</h1></div>
+
+<div class="ss">
+    <div class="sss">
+            <div class="ssw" id="">
+                <img src="cservice.jpg" alt="">
+            </div>
+        </a>
+    </div>
+</div>
+
+    <div class="faq-card">
+        <h2>Frequently asked Questions</h2>
+        <div id="faq-wrapper"></div>
+    </div>
+    <h1 class="heading testi">Testimonials &gt;</h1>
+    <div class="rbox" id="slider-container">
+        <div class="rwrap" id="review-inner"></div>
+    </div>
+
+    
+    
+
+    <div class="cbox">
+        <div class="cwrap">
+            <img class="cimg" src="newlogo.jpg" alt="Logo Footer">
+            <div class="ctext">
+                <h1>Address</h1>
+                <h3>Chauras</h3>
+                <h3>Gadwal</h3>
+                <h3>Uttarakhand</h3>
+                <h3>Contact: <a href="tel:9321159882">9321159882</a></h3>
+                <div class="acc">
+                    <a href="https://www.instagram.com/winkitmussoorie"><img title="Instagram" src="insta.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+            <a href="https://maps.app.goo.gl/eFpB5Z9TgS6f2hZR9" id="map-link"><img class="cimg" src="map.jpg" alt="Map"></a>
+        </div>
+    </div>
+    <footer class="footerf"><h1>Made with ❤️ by Ankur</h1><a href="https://www.instagram.com/ankurchauhan129"><img class="mwli" src="insta.jpg" alt=""></a></footer>
+
+    <div id="lightbox" class="lightbox hidden">
+    <div class="lightbox-content">
+        <span class="close-lightbox">&times;</span>
+        <h2 id="lightbox-title"></h2>
+        
+        <div class="slider-container">
+            <button class="prev-slide">❮</button>
+            <div id="slider-images"></div>
+            <button class="next-slide">❯</button>
+        </div>
+        
+        <p id="lightbox-description"></p>
+
+      
+
+    <script src="script.js"></script>
+</body>
+
+</html>
