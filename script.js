@@ -1911,7 +1911,7 @@ document.getElementById('location-btn').addEventListener('click', async () => {
                 }
 
                 updateSidebar();
-                display.innerText = `✅ ${currentDistance.toFixed(1)} km from HimKart`;
+                display.innerText = `✅ ${currentDistance.toFixed(1)} km from HimKart Garhwal`;
             } catch (e) { 
                 custAddressInput.value = `Lat: ${userCoords.lat}, Lon: ${userCoords.lon}`;
                 display.innerText = `✅ Tagged (${currentDistance.toFixed(1)} km)`; 
@@ -1974,7 +1974,7 @@ whatsappBtn.addEventListener('click', () => {
     const locationLink = userCoords ? `https://www.google.com/maps?q=${userCoords.lat},${userCoords.lon}` : `(Location not tagged)`;
     const divider = "--------------------------\n"; 
     
-    let msg = `*🛍️ NEW ORDER - HimKart*\n`;
+    let msg = `*🛍️ NEW ORDER - HimKart Garhwal*\n`;
     msg += divider;
     msg += `📅 Date: ${dateStr} | ${timeStr}\n`;
     msg += `👤 Name: ${name}\n📍 Address: ${address}\n🗺️ Location: ${locationLink}\n\n`;
